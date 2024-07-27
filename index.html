@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menu Makan Malam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Menu Makan Malam</h1>
+        
+        <form id="dinner-form">
+            <label for="full-name">Nama Lengkap:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="menu">Pilih Menu Makan Malam nya sayang:</label>
+            <select id="menu" name="menu" required>
+                <option value="">--Pilih Menu--</option>
+                <option value="menu1">Nasi Goreng</option>
+                <option value="menu2">Mie Goreng</option>
+                <option value="menu3">Lalapan</option>
+                <option value="menu4">Geprek</option>
+                <option value="menu5">Atau Kita makan diluar</option>
+            </select>
+
+            <label for="reason">Alasan Memilih Menu:</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <div id="thank-you-message" class="hidden">
+            <h2>Terima Kasih!</h2>
+            <p>Terima kasih telah memilih menu makan malam. Tunggu Suamimu Ini Pulang Baru Kita Makan.wkwkwkwk.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
